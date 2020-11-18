@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>keycodes</title>
+  </head>
+  <body>
+    <div id="key-displays"><!--main display container-->
+      <div id="ev-which" class="which-display"><!--title-->
+        Press a key to see the key information
+      </div>
+      <div id="secondary-display"><!--secondary container-->
+        <div id="ev-keyH" class="display-heads">event.key<!--format is subtitle-->
+          <div id="ev-keyV" class="display-values"></div><!--followed by content (none yet)-->
+        </div>
+        <div id="ev-codeH" class="display-heads">event.code
+          <div id="ev-codeV" class="display-values"></div>
+        </div>
+        <div id="ev-whichH" class="display-heads">event.which
+          <div id="ev-keyV" class="which-display display-values"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

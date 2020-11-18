@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+body {
+  /*background colours*/
+  background-image: linear-gradient(
+    to right,
+    darksalmon,
+    lightgoldenrodyellow,
+    darkcyan
+  );
+  font-family: 'Work Sans', 'sans-serif'; /*font styling*/
+  color: darkslategray;
+  text-align: center;
+  display: flex; /*sets up flex display*/
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+#key-displays {
+  /*flex box containing all the content - moving/sizing it will place the content around the page*/
+  display: flex; /*might have been overzealous in making everything flex box */
+  width: 50%;
+  min-width: 300px; /*ensures it doesn't get toooo squeezed by small screens*/
+  height: 100%;
+  align-content: center; /*everything should default to the center of the box,*/
+  justify-content: center; /*which is itself in the center of the screen*/
+  flex-wrap: wrap; /*lets all the elements flow around each other*/
+}
+#ev-which {
+  /*title bad*/
+  min-width: 100%; /*setting min-width to 100% enusre the title will always be on it's own line*/
+  font-size: 7vmin;
+  padding-bottom: 5vh;
+}
+#secondary-display {
+  /*flexbox for the other display elements*/
+  min-width: 100%;
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5vh;
+}
+.display-heads {
+  /*styling for secondary display elements*/
+  width: 33.333%;
+  font-size: 4vmin;
+  visibility: hidden;/*hides it all until the big reveal*/
+}
+
+@media all and (max-width: 1000px) {
+  /*formatting for mobile and tablet*/
+  #ev-which {
+    font-size: 9vmin;
+  }
+  .display-heads {
+    width: 100%;
+    font-size: 7vmin;
+  }
+}
